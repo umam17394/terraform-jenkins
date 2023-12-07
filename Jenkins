@@ -20,7 +20,7 @@ pipeline {
         }
         stage('terraform apply-destroy') {
             steps {
-                sh 'terraform ${params.action} --auto-approve'
+                sh "terraform ${params.action} --auto-approve"
             }
         }        
     }
